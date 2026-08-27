@@ -53,7 +53,7 @@ export default function Home() {
       <div className="relative flex w-full max-w-2xl flex-col items-center text-center">
         <button
           onClick={handleClick}
-          className="border border-gold bg-gold px-12 py-[18px] font-sans text-[21px] font-bold uppercase tracking-widest text-nachtblau transition-colors duration-300 hover:bg-nachtblau hover:text-gold"
+          className="border border-gold bg-gold/50 px-12 py-[18px] font-serif text-[21px] font-bold tracking-widest text-nachtblau transition-colors duration-300 hover:bg-nachtblau hover:text-gold"
         >
           Jetzt ein Klassik-Werk entdecken
         </button>
