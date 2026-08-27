@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Klassik entdecken",
   description:
     "Entdecke zufällig ausgewählte Werke der klassischen Musik von 1600 bis 2000.",
+  icons: {
+    icon: "/Logo.png",
+  },
 };
 
 export default function RootLayout({
