@@ -62,19 +62,19 @@ export default function Home() {
           <div className="mt-12 flex w-full flex-col items-center gap-4">
             <div className="h-px w-16 bg-gold" />
 
-            <h1 className="font-serif text-4xl font-semibold text-creme sm:text-5xl">
+            <h1 className="font-serif text-4xl font-semibold text-gold sm:text-5xl">
               {aktuellesWerk.werk}
             </h1>
 
-            <p className="font-serif text-xl text-creme sm:text-2xl">
+            <p className="font-serif text-3xl text-creme sm:text-4xl">
               {aktuellesWerk.komponist}
             </p>
 
-            <p className="font-sans text-sm tracking-wide text-gold">
+            <p className="font-sans text-[21px] tracking-wide text-creme">
               {aktuellesWerk.jahr}
             </p>
 
-            <p className="max-w-xl font-sans text-base leading-relaxed text-creme/80">
+            <p className="max-w-xl font-sans text-xl leading-relaxed text-creme/80">
               {aktuellesWerk.kommentar}
             </p>
 
@@ -82,7 +82,7 @@ export default function Home() {
               href={aktuellesWerk.spotify}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-sans text-sm uppercase tracking-widest text-gold underline underline-offset-4 hover:text-creme"
+              className="font-sans text-sm tracking-widest text-[#1ED760] underline underline-offset-4 hover:text-creme"
             >
               Spotify
             </a>
