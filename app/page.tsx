@@ -68,7 +68,7 @@ export default function Home() {
         {aktuellesWerk && (
           <div className="mt-12 flex w-full flex-col items-center gap-4">
             <h1 className="font-serif text-4xl font-semibold text-gold sm:text-5xl">
-              {aktuellesWerk.werk}
+              «{aktuellesWerk.werk}»
             </h1>
 
             <p className="font-serif text-3xl text-creme sm:text-4xl">
@@ -80,7 +80,7 @@ export default function Home() {
             </p>
 
             <p className="max-w-xl font-sans text-xl leading-relaxed text-creme/80">
-              {aktuellesWerk.kommentar}
+              «{aktuellesWerk.kommentar}»
             </p>
 
             <a
