@@ -45,15 +45,16 @@ export default function Home() {
 
   return (
     <main
-      className="relative flex min-h-screen flex-col items-center justify-center bg-nachtblau bg-cover bg-[65%_30%] px-6 py-16 sm:bg-center"
+      className="relative min-h-screen bg-nachtblau bg-cover bg-[65%_30%] sm:bg-center"
       style={{ backgroundImage: "url('/App_Startseite.webp')" }}
     >
       <div className="absolute inset-0 bg-nachtblau/60" />
 
+      <div className="absolute inset-x-0 top-[83%] flex -translate-y-1/2 justify-center px-6">
       <div className="relative flex w-full max-w-2xl flex-col items-center text-center">
         <button
           onClick={handleClick}
-          className="border border-gold bg-gold/50 px-12 py-[18px] font-serif text-[21px] font-bold tracking-widest text-nachtblau transition-colors duration-300 hover:bg-nachtblau hover:text-gold"
+          className="border border-gold bg-gold/60 px-12 py-[18px] font-serif text-[21px] font-bold tracking-widest text-nachtblau transition-colors duration-300 hover:bg-nachtblau hover:text-gold"
         >
           Jetzt ein Klassik-Werk entdecken
         </button>
@@ -86,6 +87,7 @@ export default function Home() {
             </a>
           </div>
         )}
+      </div>
       </div>
     </main>
   );
