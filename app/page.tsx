@@ -50,7 +50,13 @@ export default function Home() {
     >
       <div className="absolute inset-0 bg-nachtblau/60" />
 
-      <div className="absolute inset-x-0 top-[83%] flex -translate-y-1/2 justify-center px-6">
+      <div
+        className={
+          aktuellesWerk
+            ? "absolute inset-x-0 top-16 flex justify-center px-6"
+            : "absolute inset-x-0 top-[60%] flex -translate-y-1/2 justify-center px-6"
+        }
+      >
       <div className="relative flex w-full max-w-2xl flex-col items-center text-center">
         <button
           onClick={handleClick}
