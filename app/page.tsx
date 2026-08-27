@@ -60,8 +60,6 @@ export default function Home() {
 
         {aktuellesWerk && (
           <div className="mt-12 flex w-full flex-col items-center gap-4">
-            <div className="h-px w-16 bg-gold" />
-
             <h1 className="font-serif text-4xl font-semibold text-gold sm:text-5xl">
               {aktuellesWerk.werk}
             </h1>
@@ -82,12 +80,10 @@ export default function Home() {
               href={aktuellesWerk.spotify}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-sans text-xl font-bold tracking-widest text-[#1ED760] hover:text-creme"
+              className="font-sans text-xl font-bold tracking-widest text-[#1ED760]"
             >
               Werk auf Spotify hören
             </a>
-
-            <div className="h-px w-16 bg-gold" />
           </div>
         )}
       </div>
