@@ -80,7 +80,7 @@ export default function Home() {
             </p>
 
             <p className="max-w-xl font-sans text-xl leading-relaxed text-creme/80">
-              «{aktuellesWerk.kommentar}»
+              {aktuellesWerk.kommentar}
             </p>
 
             <a
