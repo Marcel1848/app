@@ -82,9 +82,9 @@ export default function Home() {
               href={aktuellesWerk.spotify}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-sans text-sm tracking-widest text-[#1ED760] underline underline-offset-4 hover:text-creme"
+              className="font-sans text-xl font-bold tracking-widest text-[#1ED760] hover:text-creme"
             >
-              Spotify
+              Werk auf Spotify hören
             </a>
 
             <div className="h-px w-16 bg-gold" />
