@@ -45,7 +45,7 @@ export default function Home() {
 
   return (
     <main
-      className="relative flex min-h-screen flex-col items-center justify-center bg-nachtblau bg-cover bg-center px-6 py-16"
+      className="relative flex min-h-screen flex-col items-center justify-center bg-nachtblau bg-cover bg-[65%_30%] px-6 py-16 sm:bg-center"
       style={{ backgroundImage: "url('/App_Startseite.webp')" }}
     >
       <div className="absolute inset-0 bg-nachtblau/60" />
