@@ -58,18 +58,19 @@ export default function Home() {
         }
       >
       <div className="relative flex w-full max-w-2xl flex-col items-center text-center">
-        <div className="mb-8 flex flex-col gap-4 font-sans text-lg text-creme">
-          <p>
-            Entdecke 400 repräsentative und bedeutende Werke aus 400 Jahren
-            klassischer Musik zwischen 1600 und 2000.
-          </p>
-          <p>
-            Freu dich auf Orchesterwerke, Konzerte, Kammermusik, Solomusik,
-            geistliche und weltliche Vokalmusik, Oper sowie Ballett- und
-            Bühnenmusik.
-          </p>
-          <p>Klick und entdeck!</p>
-        </div>
+        {!aktuellesWerk && (
+          <div className="mb-8 flex flex-col gap-4 font-sans text-lg text-creme">
+            <p>
+              Entdecke 400 repräsentative und bedeutende Werke aus 400 Jahren
+              klassischer Musik zwischen 1600 und 2000.
+            </p>
+            <p>
+              Freu dich auf Orchesterwerke, Konzerte, Kammermusik, Solomusik,
+              geistliche und weltliche Vokalmusik, Oper sowie Ballett- und
+              Bühnenmusik.
+            </p>
+          </div>
+        )}
 
         <button
           onClick={handleClick}
