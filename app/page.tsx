@@ -109,6 +109,15 @@ export default function Home() {
         )}
       </div>
       </div>
+
+      <a
+        href="https://marketing-page-seven-self.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute inset-x-0 bottom-4 text-center font-sans text-sm text-creme underline underline-offset-4 hover:text-gold"
+      >
+        Mehr über den Hintergrund der App erfahren
+      </a>
     </main>
   );
 }
