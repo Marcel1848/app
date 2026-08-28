@@ -16,7 +16,7 @@ Diese Checkliste geht davon aus, dass dir keine Plattform Auth, Zugriffsregeln o
 - [x] Keine `.env`-Datei im Repo, auch nicht in der Commit-History (einmal gepusht = kompromittiert, Schlüssel rotieren)
 - [x] `.env`, `.env.local` und `.env*.local` stehen in `.gitignore`
 - [x] API-Keys liegen in den Vercel Environment Variables, nicht im Code *(N/A – die App verwendet keine API-Keys/Secrets)*
-- [ ] GitHub: Secret Scanning und Push Protection sind aktiviert (verhindert das Problem, statt es hinterher zu finden)
+- [x] GitHub: Secret Scanning und Push Protection sind aktiviert (verhindert das Problem, statt es hinterher zu finden)
 
 **Wichtig:** Ein privates Repo ist kein Schutz. Datei löschen reicht nicht, die History muss bereinigt werden (`git filter-repo`) und der Schlüssel muss trotzdem rotiert werden.
 
@@ -59,8 +59,8 @@ Jede Datei in `/api` und jede Server Action ist ein öffentlicher Endpunkt. Dass
 
 ### 6. Deployment-Schutz auf Vercel
 
-- [ ] **Deployment Protection aktiviert.** Sonst ist jeder Preview-Branch öffentlich erreichbar und indexierbar, inklusive halbfertigem Admin-Bereich und Testdaten.
-- [ ] Environment-Variablen sind pro Umgebung getrennt (Production, Preview, Development). Preview zeigt nicht auf die Produktionsdatenbank.
+- [x] **Deployment Protection aktiviert.** Sonst ist jeder Preview-Branch öffentlich erreichbar und indexierbar, inklusive halbfertigem Admin-Bereich und Testdaten.
+- [x] Environment-Variablen sind pro Umgebung getrennt (Production, Preview, Development). Preview zeigt nicht auf die Produktionsdatenbank.
 - [x] Publizierte URL im Inkognito-Fenster geöffnet: Es ist nur sichtbar, was öffentlich sein soll *(verifiziert per Live-Abfrage: Startseite liefert 200 OK, nur der vorgesehene Inhalt)*
 - [x] Admin-Bereiche und Testseiten sind nicht ohne Login erreichbar *(N/A – App hat keine Admin-/Testseiten)*
 
