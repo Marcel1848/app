@@ -76,7 +76,9 @@ export default function Home() {
           onClick={handleClick}
           className="border border-gold bg-gold/60 px-12 py-[18px] font-serif text-[21px] font-bold tracking-widest text-nachtblau transition-colors duration-300 hover:bg-nachtblau hover:text-gold"
         >
-          Jetzt ein Klassik-Werk entdecken
+          {aktuellesWerk
+            ? "Ein anderes Klassik-Werk entdecken"
+            : "Jetzt ein Klassik-Werk entdecken"}
         </button>
 
         {aktuellesWerk && (
