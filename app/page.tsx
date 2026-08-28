@@ -54,10 +54,23 @@ export default function Home() {
         className={
           aktuellesWerk
             ? "absolute inset-x-0 top-16 flex justify-center px-6"
-            : "absolute inset-x-0 top-[60%] flex -translate-y-1/2 justify-center px-6"
+            : "absolute inset-x-0 bottom-[calc(40%-35px)] flex justify-center px-6"
         }
       >
       <div className="relative flex w-full max-w-2xl flex-col items-center text-center">
+        <div className="mb-8 flex flex-col gap-4 font-sans text-lg text-creme">
+          <p>
+            Entdecke 400 repräsentative und bedeutende Werke aus 400 Jahren
+            klassischer Musik zwischen 1600 und 2000.
+          </p>
+          <p>
+            Freu dich auf Orchesterwerke, Konzerte, Kammermusik, Solomusik,
+            geistliche und weltliche Vokalmusik, Oper sowie Ballett- und
+            Bühnenmusik.
+          </p>
+          <p>Klick und entdeck!</p>
+        </div>
+
         <button
           onClick={handleClick}
           className="border border-gold bg-gold/60 px-12 py-[18px] font-serif text-[21px] font-bold tracking-widest text-nachtblau transition-colors duration-300 hover:bg-nachtblau hover:text-gold"
