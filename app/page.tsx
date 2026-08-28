@@ -61,8 +61,12 @@ export default function Home() {
         {!aktuellesWerk && (
           <div className="mb-8 flex flex-col gap-4 font-sans text-lg text-creme">
             <p>
-              Entdecke 400 repräsentative und bedeutende Werke aus 400 Jahren
+              Entdeck 400 repräsentative und bedeutende Werke aus 400 Jahren
               klassischer Musik zwischen 1600 und 2000.
+            </p>
+            <p>
+              Klick auf den Button und die App wählt aus den 400 Werken per
+              Zufallsprinzip eines aus.
             </p>
             <p>
               Freu dich auf Orchesterwerke, Konzerte, Kammermusik, Solomusik,
